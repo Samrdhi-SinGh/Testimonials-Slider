@@ -1,0 +1,40 @@
+* {
+  text-align: center;
+  margin: 20px;
+  /* display: inline-block; */
+  /* overflow: hidden; */
+}
+
+.js-card {
+  display: inline-block;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.js-next-button {
+  border: none;
+  padding: 8px 35px;
+  font-size: 15px;
+  background-color: rgb(45, 89, 170);
+  color: white;
+  border-radius: 10px;
+}
+
+.js-random-button {
+  border: none;
+  padding: 8px 25px;
+  font-size: 15px;
+  background-color: rgb(14, 144, 12);
+  color: white;
+  border-radius: 10px;
+}
+
+.js-previous-button {
+  border: none;
+  padding: 8px 23px;
+  font-size: 15px;
+  background-color: rgb(145, 11, 92);
+  color: white;
+  border-radius: 10px;
+}
