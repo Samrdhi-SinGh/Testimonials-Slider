@@ -1,8 +1,7 @@
 * {
   text-align: center;
-  margin: 20px;
-  /* display: inline-block; */
-  /* overflow: hidden; */
+  margin: 15px;
+  overflow: hidden;
 }
 
 .js-card {
@@ -10,6 +9,14 @@
   padding: 20px;
   background-color: black;
   color: white;
+  width: 450px;
+  max-width: 900px;
+  height: 470px;
+  min-height: 450px;
+}
+
+#image {
+  border-radius: 10px;
 }
 
 .js-next-button {

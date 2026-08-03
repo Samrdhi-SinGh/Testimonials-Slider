@@ -37,10 +37,8 @@ const reviewElement = document.querySelector('#review');
 
 const Review = function () {
 
-  const Review = document.querySelector('.js-card');
-
   imageElement.src = Array[currentindex].img;
-  // console.log(Array[currentindex]);
+  console.log(Array[currentindex].img);
 
   nameElement.innerText = Array[currentindex].name;
   // console.log(Array[currentindex].name);
@@ -57,7 +55,12 @@ Review();
 
 const nextButton = function () {
 
-  currentindex += 1;
+  currentindex++;
+
+  if(currentindex > Array.length - 1)
+    currentindex = 0;
+
+
   Review();
 
 }
@@ -73,9 +76,14 @@ const randomButton = function () {
 
 }
 
-const previousButton = function () {
+function previousButton() {
 
-  currentindex -= 1;
+  currentindex--;
+
+  if (currentindex < 0)
+    currentindex = Array.length - 1;
+  console.log(currentindex);
+
   Review();
 
 }
